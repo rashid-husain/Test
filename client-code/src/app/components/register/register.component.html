@@ -1,0 +1,27 @@
+<div class="row justify-content-center">
+  <div class="col-8 mt-5">
+    <div *ngIf="showAlert">
+      <alert type="info">
+        <strong>Registration!</strong> Successfull.
+      </alert>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        User Registration
+      </div>
+      <div class="card-body">
+        <form>
+          <label for="Username">User Name </label>
+          <input type="text" name="username" class="form-control" [(ngModel)]="userRegisterModel.username" placeholder="Username">
+          <label for="Email">Email </label>
+          <input type="email" name="Email" class="form-control" [(ngModel)]="userRegisterModel.email" placeholder="Email">
+          <label for="Password">Password </label>
+          <input type="password" name="password" class="form-control" [(ngModel)]="userRegisterModel.password" placeholder="Password">
+          <button type="button" (click)="registerUser()" [disabled]="!userRegisterModel.username || !userRegisterModel.email || !userRegisterModel.password"
+            class="btn btn-primary mt-3">Register</button>
+          <button type="button" (click)="goBack()" class="btn btn-secondery mt-3">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

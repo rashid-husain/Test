@@ -1,0 +1,41 @@
+<div class="row justify-content-center">
+  <div class="col-4 mt-5">
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Login
+      </div>
+      <div class="card-body">
+        <div *ngIf="checkLoginCredentials">
+          <alert type="danger">
+            <strong>Invalid!</strong> Credentials.
+          </alert>
+        </div>
+        <form>
+        <label for="userName"> Email </label>
+        <input type="email" name="email" placeholder="Email" [(ngModel)]="email" class="form-control">
+        <label for="password">Password</label>
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Password" class="form-control">
+        <button (click)="login(template);" [disabled]="!email || !password" type="button" class="btn btn-primary m-3">
+          Login
+        </button>
+        <button type="button" (click)="register()" class="btn btn-info m-3">
+          Register
+        </button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Login</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Login Successful!
+  </div>
+</ng-template>

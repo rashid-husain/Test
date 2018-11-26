@@ -1,0 +1,119 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-8 mt-3" style="display: flex;">
+        <button type="button" (click)="showCreateCategoryField = true;" class="btn btn-primary"> + Create Category</button>
+    </div>
+    <div *ngIf="showCreatedAlert">
+      <alert type="info">
+        <strong>Category!</strong> Created Successfully.
+      </alert>
+    </div>
+    <div *ngIf="showErrorMessage">
+        <alert type="danger">
+            <strong>{{ createCategory?.name}}!</strong> Category Already Exist.
+        </alert>
+    </div>
+    {{userName}}
+  </div>
+  <div *ngIf="showCreateCategoryField">
+    <div class="row justify-content-center">
+      <div class="col-8 mt-3">
+        <div class="card">
+          <div class="card-header">
+            Create Category
+          </div>
+          <div class="card-body">
+            <label for="name"> Name </label>
+            <input type="text" name="name" placeholder="Name" [(ngModel)]="createCategory.name" class="form-control">
+            <label for="type"> Type </label>
+            <input type="text" name="tye" placeholder="Type" [(ngModel)]="createCategory.type" class="form-control">
+            <label for="description">Description</label>
+            <textarea cols="100" rows="2" placeholder="Description" name="Description" [(ngModel)]="createCategory.description" class="form-control"></textarea>
+            <button (click)="createCategories();" [disabled]="!createCategory.name || !createCategory.type || !createCategory.description" type="button" class="btn btn-primary m-3">
+              Submit
+            </button>
+            <button (click)="showCreateCategoryField = false;" type="button" class="btn btn-secondary m-3">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showAlert">
+    <alert type="info">
+      <strong>Category!</strong> Successfully Removed.
+    </alert>
+  </div>
+  <div *ngIf="showUpdateAlert">
+    <alert type="info">
+      <strong>Category!</strong> Successfully Updated.
+    </alert>
+  </div>
+  <div *ngIf="categories.length > 0" class="mt-3">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let category of categories; let index = i">
+          <td>{{ category?.name }}</td>
+          <td>{{ category?.type }}</td>
+          <td>{{ category?.description }}</td>
+          <td>
+            <button class="btn btn-info" (click)="setUpdateCategory(category, updateTemplate)">Edit</button> &nbsp;
+            <button class="btn btn-danger" (click)="setDeleteCategory(category, deleteTemplate)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+<ng-template #deleteTemplate>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Delete Confirmation</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Are you sure want to delete?
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="deleteCategory()">Yes</button> &nbsp;
+    <button type="button" class="btn btn-secondary" (click)="modalRef.hide()">Close</button>
+  </div>
+</ng-template>
+
+<!--Edit category start here...-->
+<ng-template #updateTemplate>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Update Category</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <label>Name</label>
+    <input type="text" name="name" [(ngModel)]="updateCategory.name" class="form-control" />
+    <label>Type</label>
+    <input type="text" name="type" [(ngModel)]="updateCategory.type" class="form-control" />
+    <label>Decription</label>
+    <input type="text" name="description" [(ngModel)]="updateCategory.description" class="form-control" />
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="editCategory()">Update</button> &nbsp;
+    <button type="button" class="btn btn-secondary" (click)="modalRef.hide()">Close</button>
+  </div>
+</ng-template>
+
+<!--Edit category functionality end here...-->
