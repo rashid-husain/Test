@@ -1,0 +1,71 @@
+{
+  "ids": {
+    "User": 8,
+    "AccessToken": 31,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Category": 8,
+    "Sub-category": 14
+  },
+  "models": {
+    "User": {
+      "1": "{\"username\":\"goodjob\",\"password\":\"$2a$10$ALM0VEjSbrLTEh9evduWXeB6k3J.ciDP4pnS/lh3Dn9rhEoC/Na3.\",\"email\":\"goodjob@shoppinpal.com\",\"id\":1}",
+      "2": "{\"username\":\"you_rock\",\"password\":\"$2a$10$Pobcb9gEggfP7oNuAgAZKuW4iQIZ.V9hKMll2S8.FW5NWwToAXT/i\",\"email\":\"yourock@shoppinpal.com\",\"id\":2}",
+      "3": "{\"username\":\"string\",\"password\":\"$2a$10$kUWjWSQtaZE.Nc3PtRWA2uex8ib8JIz4l.VNoXYpc0KgvSjTdcBh2\",\"email\":\"user@gmail.com\",\"id\":3}",
+      "4": "{\"password\":\"$2a$10$RlQmTyWS939fMlcT4sppFO.EckWGHGKSmpLdotm3pCWXRJGpHSJOm\",\"email\":\"admin@gmail.com\",\"userName\":\"admin\",\"id\":4}",
+      "5": "{\"password\":\"$2a$10$bGGS3fcDyLzIB861j9XKRupN30vSePjbBNz3lLnN5KBwkonvBedYi\",\"email\":\"super@gmail.com\",\"userName\":\"Super Admin\",\"id\":5}",
+      "6": "{\"password\":\"$2a$10$d7nSRulKcnYFDU.NnukoLeboodouPbS35zZQWQJaGC9SNDJLQeovK\",\"email\":\"user2@gmail.com\",\"userName\":\"user2\",\"id\":6}",
+      "7": "{\"username\":\"user3\",\"password\":\"$2a$10$xxpQCta2cnfomn2RjOququYoNuekp9.4oYhQ7CZNyNChIuLWDunpW\",\"email\":\"user3@gmail.com\",\"id\":7}"
+    },
+    "AccessToken": {
+      "92daPqfBm3wRqFndmCHc6BEQNb2u52Hl5rYaiXCXzpDP78tG3KMwyLmsSUfNtOGR": "{\"id\":\"92daPqfBm3wRqFndmCHc6BEQNb2u52Hl5rYaiXCXzpDP78tG3KMwyLmsSUfNtOGR\",\"ttl\":1209600,\"created\":\"2018-11-24T13:54:15.468Z\",\"userId\":3}",
+      "OYhHt4Q52uwi8LsCxRbZ58Xbz7mIZSGBF3oWxDguTr39WincHiP2D7i37ASEoNQa": "{\"id\":\"OYhHt4Q52uwi8LsCxRbZ58Xbz7mIZSGBF3oWxDguTr39WincHiP2D7i37ASEoNQa\",\"ttl\":1209600,\"created\":\"2018-11-24T14:12:34.224Z\",\"userId\":3}",
+      "lLpspbtUCAGCpboYMRhuEiDexx8ws09oe4D6EYYEvrHr8O0kc5F9uzaGoNEPtMYZ": "{\"id\":\"lLpspbtUCAGCpboYMRhuEiDexx8ws09oe4D6EYYEvrHr8O0kc5F9uzaGoNEPtMYZ\",\"ttl\":1209600,\"created\":\"2018-11-24T18:07:01.116Z\",\"userId\":3}",
+      "pWwyKFLIK2PBhPFzMEadq2uUS1tkRGwbU5AbBk07FjDhCdgH9Jd7kjuHsSXFwVvn": "{\"id\":\"pWwyKFLIK2PBhPFzMEadq2uUS1tkRGwbU5AbBk07FjDhCdgH9Jd7kjuHsSXFwVvn\",\"ttl\":1209600,\"created\":\"2018-11-24T18:08:03.562Z\",\"userId\":3}",
+      "0EFv2NkqWD4PvdXC6xtQj6lBIzA8Y8zgPn6Y5BatfCK0XUfnlYY8ha1Sj9hgNb2E": "{\"id\":\"0EFv2NkqWD4PvdXC6xtQj6lBIzA8Y8zgPn6Y5BatfCK0XUfnlYY8ha1Sj9hgNb2E\",\"ttl\":1209600,\"created\":\"2018-11-24T18:35:15.316Z\",\"userId\":3}",
+      "RdCEIeVXtzU0QeKdf40wM6LzKi8npSB8DEzYRHceNoDHFsGXH0o7MruXs61L280V": "{\"id\":\"RdCEIeVXtzU0QeKdf40wM6LzKi8npSB8DEzYRHceNoDHFsGXH0o7MruXs61L280V\",\"ttl\":1209600,\"created\":\"2018-11-24T19:27:22.735Z\",\"userId\":3}",
+      "rMvKmQag3KK92NDEX5bC7EI7dIP3YHJNOtltqsR2CmbsAGD0FrMKv14E3Ry3fwnX": "{\"id\":\"rMvKmQag3KK92NDEX5bC7EI7dIP3YHJNOtltqsR2CmbsAGD0FrMKv14E3Ry3fwnX\",\"ttl\":1209600,\"created\":\"2018-11-24T19:28:05.425Z\",\"userId\":3}",
+      "EutvGleo93OF5Oj7m56xfuAO1FKVGrWnntarCJjHG4FIt9ynkUyteRFt9Xvgr8hS": "{\"id\":\"EutvGleo93OF5Oj7m56xfuAO1FKVGrWnntarCJjHG4FIt9ynkUyteRFt9Xvgr8hS\",\"ttl\":1209600,\"created\":\"2018-11-24T19:33:31.354Z\",\"userId\":4}",
+      "vaLgYjppWBpv0dbePTLZX5rUotGsWpSfrixIrcRBAxEZjXSXtftTQFx1XA2dpExV": "{\"id\":\"vaLgYjppWBpv0dbePTLZX5rUotGsWpSfrixIrcRBAxEZjXSXtftTQFx1XA2dpExV\",\"ttl\":1209600,\"created\":\"2018-11-24T20:59:27.865Z\",\"userId\":4}",
+      "kzQHIz0a7qmDAunNHuz8fEXo1ipfyyFYi2pTEI3igA4Bo1mAn00LNDX9lvEAzcH7": "{\"id\":\"kzQHIz0a7qmDAunNHuz8fEXo1ipfyyFYi2pTEI3igA4Bo1mAn00LNDX9lvEAzcH7\",\"ttl\":1209600,\"created\":\"2018-11-24T22:19:45.737Z\",\"userId\":4}",
+      "pT4Euj9FrXO0wCcEOcRFh5FJnfMKG1tH51UfTM7z5rgd5yy9d7mO2DYxs0I92Xpx": "{\"id\":\"pT4Euj9FrXO0wCcEOcRFh5FJnfMKG1tH51UfTM7z5rgd5yy9d7mO2DYxs0I92Xpx\",\"ttl\":1209600,\"created\":\"2018-11-25T08:58:18.716Z\",\"userId\":4}",
+      "GooNETF0kntHRSG7GvDC8CQotjxnsw8a72k3QRAIGwTW0o0yu6x4XkYsRXKgACWN": "{\"id\":\"GooNETF0kntHRSG7GvDC8CQotjxnsw8a72k3QRAIGwTW0o0yu6x4XkYsRXKgACWN\",\"ttl\":1209600,\"created\":\"2018-11-25T09:47:00.311Z\",\"userId\":4}",
+      "fw6TbX79Ro216ODL80VI9xQ1LmXUXHrXP7oUYbckrQ2UVioIy2MRNyeENJFpwgNt": "{\"id\":\"fw6TbX79Ro216ODL80VI9xQ1LmXUXHrXP7oUYbckrQ2UVioIy2MRNyeENJFpwgNt\",\"ttl\":1209600,\"created\":\"2018-11-25T09:48:10.347Z\",\"userId\":4}",
+      "FaUyAgsTK8soW8yt7TYsP6CW67t3g6UDF4RQzOJkESLKL7X47msHUHWOnpjRd9HY": "{\"id\":\"FaUyAgsTK8soW8yt7TYsP6CW67t3g6UDF4RQzOJkESLKL7X47msHUHWOnpjRd9HY\",\"ttl\":1209600,\"created\":\"2018-11-25T09:49:44.216Z\",\"userId\":4}",
+      "BvMEUqYToRpmD6QnF3R2EfRsJRQgRoYdSHCcUq36Hr64MtKmlicEskf8N4zDvZd3": "{\"id\":\"BvMEUqYToRpmD6QnF3R2EfRsJRQgRoYdSHCcUq36Hr64MtKmlicEskf8N4zDvZd3\",\"ttl\":1209600,\"created\":\"2018-11-25T09:52:28.650Z\",\"userId\":3}",
+      "oGm89bLzsBb6z5jN7FpLKuCfrhAOpIghP2Za5QVbutd7zaYxTzFKlSoZvpkN6nDR": "{\"id\":\"oGm89bLzsBb6z5jN7FpLKuCfrhAOpIghP2Za5QVbutd7zaYxTzFKlSoZvpkN6nDR\",\"ttl\":1209600,\"created\":\"2018-11-25T09:52:59.689Z\",\"userId\":3}",
+      "bBi3F1Wg81w5elARiWeNLEDKHBBoTITtQMI1Ez8OOHAEqIApw8xZOhMD0pqto4yE": "{\"id\":\"bBi3F1Wg81w5elARiWeNLEDKHBBoTITtQMI1Ez8OOHAEqIApw8xZOhMD0pqto4yE\",\"ttl\":1209600,\"created\":\"2018-11-25T09:55:30.516Z\",\"userId\":3}",
+      "TkXE8M0cHNA0A6xmdZycGM1LcfCPDZxrcgpkGH5cADqXWEPbrUPEwc2ftULp33JU": "{\"id\":\"TkXE8M0cHNA0A6xmdZycGM1LcfCPDZxrcgpkGH5cADqXWEPbrUPEwc2ftULp33JU\",\"ttl\":1209600,\"created\":\"2018-11-25T10:00:15.030Z\",\"userId\":3}",
+      "DSr7oWwTZdjlRtFw4f45DaC24I5l62MBGXteSMS1RPCLKDMIrosk08p57nU1bb3p": "{\"id\":\"DSr7oWwTZdjlRtFw4f45DaC24I5l62MBGXteSMS1RPCLKDMIrosk08p57nU1bb3p\",\"ttl\":1209600,\"created\":\"2018-11-25T10:02:18.927Z\",\"userId\":4}",
+      "WW1paDV0wJi2VmlTg06OyG7EEwSVFTrSSEox8HGNKuIhEDRo5izzfWyR7TDOMXVA": "{\"id\":\"WW1paDV0wJi2VmlTg06OyG7EEwSVFTrSSEox8HGNKuIhEDRo5izzfWyR7TDOMXVA\",\"ttl\":1209600,\"created\":\"2018-11-25T11:00:35.952Z\",\"userId\":4}",
+      "CZf1daXkzyHMBwwJj7wFSq0CI4vx2WQFIR6nuClQi07uobm3qEoFu7H7yw9LfxoY": "{\"id\":\"CZf1daXkzyHMBwwJj7wFSq0CI4vx2WQFIR6nuClQi07uobm3qEoFu7H7yw9LfxoY\",\"ttl\":1209600,\"created\":\"2018-11-25T11:02:28.937Z\",\"userId\":4}",
+      "IghimvfomntoPjos1uOAQC4rBKdJg8BCiaoIRtMiRiOoC7dHHfNuB4Xfj1bmRrUS": "{\"id\":\"IghimvfomntoPjos1uOAQC4rBKdJg8BCiaoIRtMiRiOoC7dHHfNuB4Xfj1bmRrUS\",\"ttl\":1209600,\"created\":\"2018-11-25T11:15:40.905Z\",\"userId\":4}",
+      "BYk14sM2MEoRHFl7SVZhpp9S9o7bZHzVHqEMM98xJovEd54qLAgC4gTTOEYnFTpQ": "{\"id\":\"BYk14sM2MEoRHFl7SVZhpp9S9o7bZHzVHqEMM98xJovEd54qLAgC4gTTOEYnFTpQ\",\"ttl\":1209600,\"created\":\"2018-11-25T11:16:22.724Z\",\"userId\":4}",
+      "XOeG98uHYlqdJj5Dnjxmo404yMpPGiUZm7djEuF6hH0HrvOv7YXuz7kHeBUHDBOg": "{\"id\":\"XOeG98uHYlqdJj5Dnjxmo404yMpPGiUZm7djEuF6hH0HrvOv7YXuz7kHeBUHDBOg\",\"ttl\":1209600,\"created\":\"2018-11-25T11:25:53.267Z\",\"userId\":4}",
+      "DRKoBw0C6iH9hapW4oSKclpR8DWLfD6iCj78Z3cgCDpmtBdyy0xDqClRktRbE0yT": "{\"id\":\"DRKoBw0C6iH9hapW4oSKclpR8DWLfD6iCj78Z3cgCDpmtBdyy0xDqClRktRbE0yT\",\"ttl\":1209600,\"created\":\"2018-11-25T13:23:03.976Z\",\"userId\":4}",
+      "LHvJ1DTLZ6B4m9f7CLFQV8S5m3mG4J79zM8yzBQbQC2jCcjcwDrLoqG4XA5ECytK": "{\"id\":\"LHvJ1DTLZ6B4m9f7CLFQV8S5m3mG4J79zM8yzBQbQC2jCcjcwDrLoqG4XA5ECytK\",\"ttl\":1209600,\"created\":\"2018-11-25T13:50:13.297Z\",\"userId\":3}",
+      "HhDclqrDzSNxmhOuHiq7P3Rccm7vz2peG1LzHEiOQDdemJ8bjiPGT3NbGfMFgNRm": "{\"id\":\"HhDclqrDzSNxmhOuHiq7P3Rccm7vz2peG1LzHEiOQDdemJ8bjiPGT3NbGfMFgNRm\",\"ttl\":1209600,\"created\":\"2018-11-25T13:53:46.224Z\",\"userId\":4}",
+      "DzUNILVKhEdriH4Zt0QrAyoBzZGg6AijFS4usrwCyfyAgyts6Op1MYBjFAm0aeY9": "{\"id\":\"DzUNILVKhEdriH4Zt0QrAyoBzZGg6AijFS4usrwCyfyAgyts6Op1MYBjFAm0aeY9\",\"ttl\":1209600,\"created\":\"2018-11-25T13:59:58.495Z\",\"userId\":4}",
+      "mOx3sxtlnehIkDp1e9gyewQC1APBpC8jiXFtNIhRI4pXh2ETtNrkLKEVA2G5QpIn": "{\"id\":\"mOx3sxtlnehIkDp1e9gyewQC1APBpC8jiXFtNIhRI4pXh2ETtNrkLKEVA2G5QpIn\",\"ttl\":1209600,\"created\":\"2018-11-25T14:03:10.492Z\",\"userId\":7}",
+      "yXb0MTVFq7ExYiwseFk7fMHpSz9TNE2I2535O5nk0hCLhCEjOScxHgmPDxniFB4e": "{\"id\":\"yXb0MTVFq7ExYiwseFk7fMHpSz9TNE2I2535O5nk0hCLhCEjOScxHgmPDxniFB4e\",\"ttl\":1209600,\"created\":\"2018-11-25T18:44:54.698Z\",\"userId\":3}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Category": {
+      "3": "{\"name\":\"Electronic\",\"description\":\"headphone\",\"type\":\"media\",\"id\":3}",
+      "4": "{\"name\":\"Home Decar\",\"description\":\"abcd\",\"type\":\"Furniture\",\"id\":4}",
+      "5": "{\"name\":\"Fashion\",\"description\":\"asd\",\"type\":\"Mens\",\"id\":5}",
+      "7": "{\"name\":\"Automobile\",\"description\":\"Auto Generate\",\"type\":\"auto\",\"id\":7}"
+    },
+    "Sub-category": {
+      "8": "{\"name\":\"Table\",\"description\":\"asdfc\",\"parentType\":\"Home Decar\",\"type\":\"Furniture\",\"categoryId\":4,\"id\":8}",
+      "9": "{\"name\":\"AC\",\"description\":\"abcz\",\"parentType\":\"Electronic\",\"type\":\"office\",\"categoryId\":3,\"id\":9}",
+      "10": "{\"name\":\"AC2\",\"description\":\"xfdd\",\"parentType\":\"Electronic\",\"type\":\"office\",\"categoryId\":3,\"id\":10}",
+      "11": "{\"name\":\"Sofa\",\"description\":\"asdf\",\"parentType\":\"Home Decar\",\"type\":\"single\",\"categoryId\":4,\"id\":11}",
+      "12": "{\"name\":\"Kurta\",\"description\":\"xls\",\"parentType\":\"Fashion\",\"type\":\"casuals\",\"categoryId\":5,\"id\":12}",
+      "13": "{\"name\":\"Tables\",\"description\":\"aaa\",\"parentType\":\"Home Decar\",\"type\":\"ass\",\"categoryId\":4,\"id\":13}"
+    }
+  }
+}
