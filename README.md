@@ -8,4 +8,4 @@ How To Run backend:
 Frontend :
  1. Go in 'client-code' folder and open command prompt.
  2. run command 'npm install'
- 3. after succefully installation run 'ng serve' command application will be stared.
+ 3. after succefully installation run 'ng serve' command application will be stared on 'http://localhost:4200'.
